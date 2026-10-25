@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Dictonary</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen bg-slate-100 text-slate-800">
+     <!-- Header -->
+    <header class="bg-pink-700 text-white shadow-lg">
+        <div class="mx-auto max-w-5xl px-6 py-6">
+            <h1 class="text-3xl font-bold tracking-tight">
+                WordWise
+            </h1>
+            <p class="mt-1 text-pink-100">
+                Discover words, meanings, and pronunciation.
+            </p>
+        </div>
+    </header>
+    <main class="mx-auto max-w-5xl px-6 py-10">
+        <!-- Search section -->
+        <section class="rounded-2xl bg-white p-6 shadow-md sm:p-8" aria-labelledby="search-heading">
+            <h2 id="search-heading" class="text-xl font-semibold">
+                Search the dictionary
+            </h2>
+
+            <p class="mt-2 text-sm text-slate-500">
+                Enter an English word to explore its meaning.
+            </p>
+
+            <form id="search-form" class="mt-5 flex flex-col gap-3 sm:flex-row">
+                <label for="word-input" class="sr-only">
+                    Enter a word
+                </label>
+
+                <input id="word-input" name="word" type="search" placeholder="e.g. beautiful, knowledge, happy"
+                    autocomplete="off" required maxlength="100" aria-label="Enter a word to search"
+                    class="min-w-0 flex-1 rounded-xl border border-slate-300 px-4 py-3 outline-none transition focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200" />
+
+                <button id="search-button" type="submit"
+                    class="rounded-xl bg-indigo-600 px-7 py-3 font-semibold text-white transition hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-400 disabled:cursor-not-allowed disabled:opacity-60">
+                    Search
+                </button>
+            </form>
+        </section>
+         <!-- Status messages -->
+        <div id="status" role="status" aria-live="polite" class="mt-6 text-center text-slate-600">
+            Search for a word to get started.
+        </div>
+          <!-- Results section -->
+        <section id="results" aria-label="Dictionary search results" aria-live="off" class="mt-6 space-y-6">
+        </section>
+        <footer class="mt-12 border-t border-slate-200 py-6 text-center text-sm text-slate-500">
+            <p>
+                Powered by the
+                <a href="https://dictionaryapi.dev/" target="_blank" rel="noopener noreferrer"
+                    class="font-medium text-indigo-600 underline hover:text-indigo-800">
+                    Free Dictionary API
+                </a>
+            </p>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
