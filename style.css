@@ -1,26 +1,6 @@
-body {
-      font-family: Inter, system-ui, -apple-system, sans-serif;
-    }
+.fade-in {animation: fadeIn 0.5s;}
 
-    .result-card {
-      animation: fadeIn 0.4s ease-in-out;
-    }
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(10px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    .audio-button {
-      transition: transform 0.2s ease, background-color 0.2s ease;
-    }
-
-    .audio-button:hover {
-      transform: scale(1.05);
-    }
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
