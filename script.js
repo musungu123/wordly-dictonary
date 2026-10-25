@@ -1,5 +1,3 @@
-let apiUrl ="https://api.dictionaryapi.dev/api/v2/entries/en/${word}";
-
 // Get the parts of the page we need
     const form = document.getElementById("search-form");
     const input = document.getElementById("word-input");
@@ -26,7 +24,7 @@ let apiUrl ="https://api.dictionaryapi.dev/api/v2/entries/en/${word}";
       results.innerHTML = "";
 
       try {
-        const response = await fetch(apiUrl + word.toLowerCase());
+        const response = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word.toLowerCase()}`);
 
         if (!response.ok) {
           statusText.textContent = "Sorry, we could not find \"" + word + "\".";
