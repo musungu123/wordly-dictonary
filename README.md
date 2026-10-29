@@ -17,3 +17,10 @@ Detailed Meanings: Displays parts of speech, numbered definitions, and relevant 
 Resilient API Calls: Includes an alternative proxy path (allorigins) to bypass common CORS or network blockages.
 
 Responsive & Accessible Design: Styled with Tailwind CSS, featuring accessible ARIA labels and subtle animations.
+
+📁 File Structure
+
+├── index.html     # Main HTML structure and UI markup
+├── style.css      # Custom animations and custom styles
+├── script.js     # Search logic, API fetching, DOM updates, and audio fallback
+└── README.md      # Project documentation and commit guide
