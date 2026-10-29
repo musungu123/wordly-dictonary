@@ -24,3 +24,16 @@ Responsive & Accessible Design: Styled with Tailwind CSS, featuring accessible A
 ├── style.css      # Custom animations and custom styles
 ├── script.js     # Search logic, API fetching, DOM updates, and audio fallback
 └── README.md      # Project documentation and commit guide
+
+🚀 Getting Started
+
+Prerequisites
+
+No special package managers or runtime environments are required. You only need a modern web browser (e.g., Chrome, Firefox, Edge, Safari).
+
+Running the Application
+
+Clone the repository to your local machine:
+
+git clone https://github.com/your-username/wordly-dictonary.git
+cd wordly-dictonary
